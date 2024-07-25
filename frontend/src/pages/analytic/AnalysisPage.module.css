@@ -1,0 +1,206 @@
+.container {
+  padding: 20px;
+  background: #EDEDED;
+  width: 100%;
+}
+
+.title {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 75px;
+  color: #5076FF;
+
+
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+
+  border-radius: 10px;
+  border-spacing: 0;
+  overflow: hidden;
+
+
+
+}
+
+.tableContainer {
+  max-height: 75vh;
+  /* Adjust the value as needed */
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar for IE and Edge */
+}
+
+.tableContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.table th,
+.table td {
+  border: none;
+  padding: 8px;
+  text-align: center;
+
+}
+
+/* .table tbody tr td{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 60px);
+} */
+
+.table .tableheading {
+  border-radius: 10px;
+}
+
+.table th {
+  background: #5076FF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.actionBtn {
+  display: flex;
+  gap: 8px;
+
+}
+
+.actionBtn img {
+  width: 15px;
+  padding-top: 3px;
+}
+
+.table td {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-align: center;
+
+}
+
+.table tr {}
+
+.table thead th:first-child {
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* Apply radius to the top-left corner */
+}
+
+.table tbody tr:nth-child(even) td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.table tbody tr:nth-child(even) td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.table thead th:last-child {
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.table tr:nth-child(even) {
+  background: #B3C4FF;
+
+
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.editButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.shareButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.analysisLink {
+
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-decoration: underline;
+  cursor: pointer;
+  color: #000000;
+
+
+
+}
+
+.analysisLink:hover {
+  text-decoration: underline;
+}
+
+
+/* Add these styles to AnalysisPage.module.css */
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+.NoBookMark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.NoBookMark p {
+  color: #ff7373;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+
+  text-align: center;
+}
+
+.NoBookMark img {
+  width: 50%;
+}
+
+.customToast{
+  font-size: 16px;
+}

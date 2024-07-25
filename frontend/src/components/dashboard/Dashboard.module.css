@@ -1,0 +1,181 @@
+
+.mainContent {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
+  height: 100vh;
+  background: #EDEDED;
+  width: 100%;
+  gap: 4rem;
+  /* position: relative; */
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 7rem;
+  top: 6rem;
+}
+
+.statCard {
+  background-color: #fff;
+  flex: 1;
+  padding: 20px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 5px;
+  height: 145px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  line-height: 40px;
+  font-family: Poppins;
+
+  font-weight: 600;
+  text-align: center;
+}
+
+.statCard h2 {
+  font-size: 50px;
+}
+
+.statCard span {
+  font-size: 28px;
+}
+
+.statNumber {
+  font-size: 36px;
+  display: block;
+}
+
+.trendingQuizzes {
+
+ 
+  border-radius: 5px;
+  padding-left: 3rem;
+    padding-right: 3rem;
+    max-height: 75vh; 
+  overflow-y: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  width: 100%;
+     /* Hide scrollbar for IE and Edge */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.quizzes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+  width: 100%;
+  padding: 10px;
+  
+
+}
+
+.quizCard {
+  background: #FFFFFF;
+
+  padding: 10px;
+ 
+  flex: 1 1 calc(32% - 20px);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+ 
+
+
+
+}
+
+.quizCard img {
+  width: 20px;
+}
+
+.quizName {
+  display: flex;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-size: 23px;
+  color: #474444;
+  
+  font-weight: 600;
+
+  text-align: left;
+
+}
+.quizName h2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 60px); /* Adjust based on the space needed for impressions */
+}
+
+.trendingQuizzes .trendinghtag {
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 52.5px;
+  text-align: left;
+
+}
+
+.createdTime {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 600;
+  color: #60B84B;
+
+  text-align: left;
+
+}
+
+.quizDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quizScore {
+  color: orange;
+  font-weight: bold;
+}
+
+
+
+
+
+/* Add these styles to Dashboard.module.css */
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.noData {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 600;
+  color: #2e14f4;
+  gap: 10px;
+
+}
